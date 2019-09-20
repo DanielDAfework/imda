@@ -1,24 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
+import MovieItem from './display/MovieItem';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MovieItem
+        title="The Incredibles"
+        year="2004"
+        rating="90%"
+        shortPlot="A family of undercover superheroes,
+         while trying to live the quiet suburban life, 
+         are forced into action to save the world."
+        runTime="115 min"
+        genre="Animation"
+        poster="https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX300.jpg"
+      />
     </div>
   );
 }
